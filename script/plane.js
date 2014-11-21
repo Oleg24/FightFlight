@@ -14,10 +14,8 @@ var makePlane = function( top, left ){
     this.$node.animate({top: this.top, left: this.left,}, 5);
   };
 
-
   plane.destroy = function(){
     // add class to the node of destroyed
-
     var $replacement = $('<span class="destroy"></span>');
     $replacement.css({top: this.top, left: this.left});
     $('body').prepend($replacement);
@@ -33,7 +31,6 @@ var makePlane = function( top, left ){
     // remove node from dom
     // remove plane from array of planes
   };
-
   return plane;
 };
 
